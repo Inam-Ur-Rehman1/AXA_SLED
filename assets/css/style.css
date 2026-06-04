@@ -266,7 +266,12 @@ header nav a.nav-link-active::after {
 	.mobile-nav__close:hover,
 	.mobile-nav__close:focus-visible {
 		background: var(--secondary);
-		outline: none;
+	}
+
+	.mobile-nav__links a:focus-visible,
+	.mobile-nav__close:focus-visible {
+		outline: 2px solid var(--navy-deep);
+		outline-offset: 2px;
 	}
 
 	.mobile-nav__links a.nav-link-active {
@@ -469,8 +474,12 @@ footer.bg-\[oklch\(0\.16_0\.08_262\)\] {
 .leader-card__link:hover,
 .leader-card__link:focus-visible {
 	color: var(--usa-blue);
-	outline: none;
 	text-decoration: underline;
+}
+
+.leader-card__link:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
 }
 
 .site-footer {
@@ -566,8 +575,13 @@ footer.bg-\[oklch\(0\.16_0\.08_262\)\] {
 .site-footer__contact:hover,
 .site-footer__contact:focus-visible {
 	color: #fff;
-	outline: none;
 	text-decoration: underline;
+}
+
+.site-footer nav a:focus-visible,
+.site-footer__contact:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
 }
 
 .site-footer__bottom {
